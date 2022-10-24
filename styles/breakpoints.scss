@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+@mixin for-small {
+    @media screen and (min-width:$sm) {
+        @content;
+    }
+    }
+    
+    @mixin for-large {
+    @media screen and (min-width:$lg) {
+        @content;
+    }
+    }

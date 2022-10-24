@@ -1,0 +1,116 @@
+@import 'breakpoints.scss';
+@import 'variables';
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Work sans';
+  color: $text-color-maine;
+}
+
+.audience {
+  margin: auto;
+  width: 320px;
+  height: 1808px;
+
+  background-color: $bgcolor-audience;
+  @include for-small {
+    .audience {
+      width: 320px;
+      height: 1808px;
+    }
+
+    &__engage {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 290px;
+      line-height: 34px;
+      font-weight: 700;
+      font-size: 22px;
+      text-align: center;
+      padding: 50px 15px 17px 15px;
+    }
+    &__target {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 290px;
+      line-height: 40px;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      word-spacing: -0.36px;
+      margin: 0;
+      padding: 0 15px 18px 15px;
+    }
+    &__text-info {
+      margin: 0;
+      padding: 0;
+      width: 290px;
+      display: block;
+      color: $text-color-maine;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+      word-spacing: -0.36px;
+      padding: 0px 15px 30px 15px;
+    }
+    &__action-buttons {
+      margin: 0;
+      padding: 0;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+              margin-bottom: 40px;
+    }
+    &__actionces_get-started-btn {
+      padding: 0;
+      margin: 0;
+      width: 290px;
+      height: 48px;
+      margin-bottom: 12px;
+      border-radius: $button-br;
+      border: none;
+      background-color: $bgc-button-gs;
+      color: $button-tc-gs;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 13px;
+      text-align: center;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+        inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    }
+    &__actionces_learn-more-btn {
+      padding: 0;
+      margin: 0;
+      width: 290px;
+      height: 48px;
+      background-color: $bgc-button-lm;
+      border-radius: $button-br;
+      border: none;
+      color: $button-tc-lm;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 13px;
+      text-align: center;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+        inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    }
+    &__gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__gallery_edveloper {
+        width: 290px;
+        height: 300px;
+        background-color: #fff;
+    }
+  }
+}
