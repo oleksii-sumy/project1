@@ -115,9 +115,6 @@ html {
     justify-content: center;
     border-radius: 8px;
   }
-  .audience div.gallery__items:last-child {
-    margin-bottom: 50px;
-  }
   .audience__items_img {
     width: 138px;
     height: 195px;
