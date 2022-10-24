@@ -120,10 +120,10 @@ html {
     height: 195px;
     padding-bottom: 22px;
   }
-  .audience .gallery__items_dev,
-.audience .gallery__items_athl,
-.audience .gallery__items_creat,
-.audience .gallery__items_ent {
+  .audience .gallery__items_name,
+.audience .gallery__items_name,
+.audience .gallery__items_name,
+.audience .gallery__items_name {
     color: rgb(43, 41, 45);
     font-size: 22px;
     font-weight: 700;
@@ -132,6 +132,9 @@ html {
   }
   .audience .gallery__items:hover {
     background-color: #3141C5;
+  }
+  .audience .gallery__items:hover .gallery__items_name {
+    color: #fff;
   }
 }
 @media (min-width: 320px) and (min-width: 1400px) {
@@ -249,10 +252,10 @@ html {
     height: 195px;
     padding-bottom: 22px;
   }
-  .audience .gallery__items_dev,
-.audience .gallery__items_athl,
-.audience .gallery__items_creat,
-.audience .gallery__items_ent {
+  .audience .gallery__items_name,
+.audience .gallery__items_name,
+.audience .gallery__items_name,
+.audience .gallery__items_name {
     color: rgb(43, 41, 45);
     font-size: 22px;
     font-weight: 700;
@@ -261,6 +264,9 @@ html {
   }
   .audience .gallery__items:hover {
     background-color: #3141C5;
+  }
+  .audience .gallery__items:hover .gallery__items_name {
+    color: #fff;
   }
   .audience div.gallery__items:first-child {
     margin-left: 130px;

@@ -124,10 +124,10 @@ html {
       padding-bottom: 22px;
     }
 
-    .gallery__items_dev,
-    .gallery__items_athl,
-    .gallery__items_creat,
-    .gallery__items_ent {
+    .gallery__items_name,
+    .gallery__items_name,
+    .gallery__items_name,
+    .gallery__items_name {
       color: $text-color-gallery-primary;
       font-size: 22px;
       font-weight: 700;
@@ -136,6 +136,9 @@ html {
     }
             .gallery__items:hover {
         background-color: $gallery-bgcolor-hover;
+        .gallery__items_name {
+            color: #fff;
+        }
        }
 
   }
@@ -262,10 +265,10 @@ html {
         padding-bottom: 22px;
       }
 
-      .gallery__items_dev,
-      .gallery__items_athl,
-      .gallery__items_creat,
-      .gallery__items_ent {
+      .gallery__items_name,
+      .gallery__items_name,
+      .gallery__items_name,
+      .gallery__items_name {
         color: $text-color-gallery-primary;
         font-size: 22px;
         font-weight: 700;
@@ -274,6 +277,9 @@ html {
       }
        .gallery__items:hover {
         background-color: $gallery-bgcolor-hover;
+        .gallery__items_name {
+            color: $text-color-gallery-secondary;
+        }
        }
       div.gallery__items:first-child {
         margin-left: 130px;
