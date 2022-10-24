@@ -151,6 +151,105 @@ html {
   @include for-large {
     .audience {
       background-color: $bgcolor-audience;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      min-width: 1400px;
+      height: 983px;
+
+      &__engage {
+        display: block;
+        margin: 0;
+        margin: auto;
+        width: 168px;
+        line-height: 34px;
+        height: 34px;
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 108px;
+        margin-bottom: 24px;
+      }
+      &__target {
+        display: block;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 555px;
+        height: 112px;
+        line-height: 56px;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &__text-info {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 555px;
+        height: 72px;
+        display: block;
+        color: $text-color-maine;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        word-spacing: -0.5px;
+        margin-bottom: 34px;
+      }
+      &__action-buttons {
+        margin: 0;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      &__actionces_get-started-btn {
+        padding: 0;
+        margin: 0;
+        width: 160px;
+        height: 48px;
+        margin-right: 10px;
+        border-radius: $border-r;
+        border: none;
+        background-color: $bgc-button-gs;
+        color: $button-tc-gs;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 13px;
+        text-align: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+          inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+      }
+      &__actionces_learn-more-btn {
+        padding: 0;
+        margin: 0;
+        width: 160px;
+        height: 48px;
+        background-color: $bgc-button-lm;
+        border-radius: $border-r;
+        border: none;
+        color: $button-tc-lm;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 13px;
+        text-align: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+          inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        margin-bottom: 40px;
+      }
+
+      &__gallery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
     }
   }
 }
