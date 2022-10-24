@@ -9,11 +9,11 @@ html {
 }
 
 .audience {
-  //   margin: auto;
-  //   width: 320px;
-  //   height: 1808px;
-
+    margin: auto;
+    width: 320px;
+    height: 1808px;
   background-color: $bgcolor-audience;
+  
   @include for-small {
     .audience {
       display: flex;
