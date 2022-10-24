@@ -120,12 +120,24 @@ html {
     height: 195px;
     padding-bottom: 22px;
   }
-  .audience__items_dev {
+  .audience .gallery__items_dev,
+.audience .gallery__items_athl,
+.audience .gallery__items_creat {
     color: rgb(43, 41, 45);
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
     padding-top: 22px;
+  }
+  .audience .gallery__items_ent {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top: 22px;
+  }
+  .audience .gallery__items_selected {
+    background-color: #3141C5;
   }
 }
 

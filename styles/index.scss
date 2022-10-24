@@ -113,7 +113,7 @@ html {
       padding: 0;
       margin: 0;
       margin-bottom: 15px;
-      background-color: #fff;
+      background-color: $gallery-bgcolor-primaru;
       width: 290px;
       height: 300px;
       display: flex;
@@ -128,18 +128,25 @@ html {
       padding-bottom: 22px;
     }
 
-    &__items_dev {
-      color: $text-color-dev;
+    .gallery__items_dev,
+    .gallery__items_athl,
+    .gallery__items_creat {
+      color: $text-color-gallery-primary;
       font-size: 22px;
       font-weight: 700;
       line-height: 28px;
       padding-top: 22px;
     }
     .gallery__items_ent {
-        
+      color: $text-color-gallery-secondary;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      padding-top: 22px;
     }
-
-
+    .gallery__items_selected {
+        background-color: $gallery-bgcolor-secondary;
+    }
 
   }
 }
