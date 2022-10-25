@@ -6,11 +6,41 @@
   flex-direction: column;
   margin-top: auto;
 }
+.about-company {
+  margin-top: 44px;
+
+}
+.footer__description {
+margin-top: 26px;
+width: 360px;
+line-height: 26px;
+font-size: 19px;
+color: $text-color-footer-terms;
+}
+.downloads {
+margin-top: 25px;
+}
+.downloads__item{
+margin-right: 10px;
+}
+.additional-navigation {
+    display: flex;
+    margin-top: 60px;
+    margin-left: auto;
+}
+.additional-navigation__column {
+    margin-right: 29px;
+}
+.nav-links {
+    width: 265px;
+}
 .footer-navigation {
+    display: flex;
   margin: 0 auto;
   width: 1140px;
   height: 338px;
 }
+
 .footer__line {
   margin: 0;
   width: 100%;
