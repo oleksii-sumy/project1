@@ -1,9 +1,29 @@
 @import 'breakpoints.scss';
 @import 'variables.scss';
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
 .footer-links {
-    display: flex;
-    margin: auto;
-    width: 1140px;
-    height: 50px;
+  margin: 0 auto;
+  width: 1140px;
+  height: 50px;
+}
+.useful-link {
+  margin: 0 auto;
+  width: 1140px;
+  height: 338px;
+}
+.footer__line {
+  margin: 0;
+  width: 100%;
+  border-top: 1px solid $text-color-maine;
+  opacity: 0.1;
+}
+.terms {
+    line-height: 50px;
+    text-decoration: none;
+    color: $text-color-footer-terms;
 }
