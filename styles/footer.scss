@@ -8,34 +8,56 @@
 }
 .about-company {
   margin-top: 44px;
-
 }
 .footer__description {
-margin-top: 26px;
-width: 360px;
-line-height: 26px;
-font-size: 19px;
-color: $text-color-footer-terms;
+  margin-top: 26px;
+  width: 360px;
+  line-height: 26px;
+  font-size: 19px;
+  color: $text-color-footer-terms;
 }
 .downloads {
-margin-top: 25px;
+  margin-top: 25px;
 }
-.downloads__item{
-margin-right: 10px;
+.downloads__item {
+  margin-right: 10px;
 }
 .additional-navigation {
-    display: flex;
-    margin-top: 60px;
-    margin-left: auto;
+  display: flex;
+  margin-top: 60px;
+  margin-left: auto;
 }
 .additional-navigation__column {
-    margin-right: 29px;
+  margin-right: 29px;
 }
 .nav-links {
-    width: 265px;
+  width: 265px;
+}
+.nav-links__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: $text-color-header;
+}
+.nav-links__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: $text-color-header;
+}
+.nav-links__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+    line-height: 30px;
+    font-size: 18px;
+    color: rgba(43, 41, 45, 0.6);;
+    list-style-type: none;
 }
 .footer-navigation {
-    display: flex;
+  display: flex;
   margin: 0 auto;
   width: 1140px;
   height: 338px;
