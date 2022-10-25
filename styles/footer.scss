@@ -1,0 +1,9 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.footer-links {
+    display: flex;
+    margin: auto;
+    width: 1140px;
+    height: 50px;
+}

@@ -55,7 +55,7 @@
     text-align: center;
     border-radius: 2px;
     border: none;
-    background-color: rgb(48, 64, 196);
+    background-color: #3040C4;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
@@ -176,7 +176,7 @@
     height: 48px;
     border-radius: 2px;
     border: none;
-    background-color: rgb(48, 64, 196);
+    background-color: #3040C4;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
@@ -241,13 +241,108 @@
     margin-right: 130px;
   }
 }
+.top-section {
+  padding-top: 39px;
+  background-color: #F3C6BD;
+}
+
+.header {
+  display: flex;
+  margin: auto;
+  width: 1140px;
+  height: 62px;
+}
+
+.navigation {
+  display: flex;
+  margin-left: auto;
+  margin-top: 7px;
+  margin-right: 75px;
+}
+
+.nav__item {
+  margin-right: 50px;
+  line-height: 25px;
+  color: #2B292D;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav__item_selected {
+  font-weight: 700;
+}
+
+.nav__item:last-child {
+  margin-right: 0px;
+}
+
+.nav__arrow {
+  display: inline-block;
+  margin-left: 11px;
+  width: 8px;
+  height: 5px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__image {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.logo__name {
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo__descrip {
+  line-height: 25px;
+  font-size: 18px;
+  color: #2B292D;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__button {
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3040C4;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.footer-links {
+  display: flex;
+  margin: auto;
+  width: 1140px;
+  height: 50px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-family: "Work sans";
+  font-size: 16px;
   color: rgb(43, 41, 45);
+}
+
+.page {
+  width: 1400px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,21 @@
 @import 'breakpoints.scss';
-@import 'variables';
-@import 'audience';
+@import 'variables.scss';
+@import 'audience.scss';
+@import 'header.scss';
+@import 'footer.scss';
 
 * {
   box-sizing: border-box;
 }
 html {
   font-family: 'Work sans';
+  font-size: 16px;
   color: $text-color-maine;
 }
+
+.page {
+  width: 1400px;
+  margin: auto;
+}
+
 
