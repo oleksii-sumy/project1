@@ -329,13 +329,7 @@
   margin-top: auto;
 }
 
-.footer-links {
-  margin: 0 auto;
-  width: 1140px;
-  height: 50px;
-}
-
-.useful-link {
+.footer-navigation {
   margin: 0 auto;
   width: 1140px;
   height: 338px;
@@ -348,10 +342,31 @@
   opacity: 0.1;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1140px;
+  height: 50px;
+}
+
 .terms {
   line-height: 50px;
+}
+
+.terms__item {
+  margin-left: 22px;
   text-decoration: none;
   color: rgba(43, 41, 45, 0.6);
+  opacity: 0.6;
+}
+
+.social-links {
+  margin: auto;
+}
+
+.social-links__item {
+  margin-left: 20px;
 }
 
 * {
