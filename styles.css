@@ -508,12 +508,8 @@
     margin: 35px 15px 33px 15px;
   }
   .headline__banner {
-    position: relative;
-    top: 0px;
-    right: -105px;
-    margin-left: auto;
-    width: 796px;
-    height: 448px;
+    margin-bottom: 36px;
+    width: 100%;
   }
   .headline__title {
     line-height: 50px;
@@ -531,6 +527,7 @@
     margin-top: 30px;
   }
   .headline__more-learn-btn {
+    margin-top: 15px;
     width: 158px;
     height: 48px;
     font-size: 18px;
@@ -540,6 +537,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     border-radius: 2px;
     border: none;
+  }
+}
+@media (max-width: 1399px) and (max-width: 1400px) {
+  .headline__actions-btn {
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -552,6 +554,7 @@
     width: 1140px;
   }
   .headline__content {
+    margin: 0;
     position: absolute;
     z-index: 1;
   }
@@ -588,15 +591,7 @@
   }
   .headline__more-learn-btn {
     margin-left: 10px;
-    width: 158px;
-    height: 48px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #3040c4;
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    border: none;
+    margin-top: 0;
   }
 }
 .action-button {
