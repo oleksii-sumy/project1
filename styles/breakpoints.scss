@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 @mixin for-small {
-  @media (min-width: $sm) {
+  @media (max-width: $lg - 1) {
     @content;
   }
 }

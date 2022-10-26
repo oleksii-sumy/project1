@@ -18,10 +18,19 @@ html {
   color: $text-color-maine;
 }
 
-.page {
+
+
+@include for-small {
+ .page {
+   width: 100%;
+}
+}
+@include for-large {
+  .page {
   display: flex;
   flex-direction: column;
   width: 1400px;
   margin: auto;
   min-height: 100vh;
+}
 }

@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media (max-width: 1399px) {
   .audience {
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@
     color: #fff;
   }
 }
-@media (min-width: 320px) and (min-width: 1400px) {
+@media (max-width: 1399px) and (min-width: 1400px) {
   .audience {
     display: flex;
     flex-direction: column;
@@ -241,77 +241,147 @@
     margin-right: 130px;
   }
 }
-.top-section {
-  padding-top: 39px;
-  background-color: #f3c6bd;
+@media (max-width: 1399px) {
+  .top-section {
+    padding-top: 39px;
+    background-color: #f3c6bd;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+  }
+  .header-button {
+    display: none;
+  }
+  .header__menu-icon {
+    width: 18px;
+    height: 13px;
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
+  }
+  .header__menu-button {
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.1490196078);
+    background: transparent;
+  }
+  .navigation {
+    display: none;
+  }
+  .nav__item {
+    margin-right: 50px;
+    line-height: 25px;
+    color: #2b292d;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .nav__item_selected {
+    font-weight: 700;
+  }
+  .nav__item:last-child {
+    margin-right: 0px;
+  }
+  .nav__arrow {
+    display: inline-block;
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+  }
+  .logo {
+    display: flex;
+  }
+  .logo__image {
+    margin-right: 13px;
+    width: 48px;
+    height: 48px;
+  }
+  .logo__name {
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .logo__descrip {
+    display: none;
+  }
+  .logo__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
-.header {
-  display: flex;
-  margin: auto;
-  width: 1140px;
-  height: 62px;
+@media (min-width: 1400px) {
+  .top-section {
+    padding-top: 39px;
+    background-color: #f3c6bd;
+  }
+  .header {
+    display: flex;
+    margin: auto;
+    width: 1140px;
+    height: 62px;
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header-button {
+    display: block;
+  }
+  .navigation {
+    display: flex;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+  }
+  .nav__item {
+    margin-right: 50px;
+    line-height: 25px;
+    color: #2b292d;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .nav__item_selected {
+    font-weight: 700;
+  }
+  .nav__item:last-child {
+    margin-right: 0px;
+  }
+  .nav__arrow {
+    display: inline-block;
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+  }
+  .logo {
+    display: flex;
+  }
+  .logo__image {
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+  .logo__name {
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .logo__descrip {
+    line-height: 25px;
+    font-size: 18px;
+    color: #2b292d;
+  }
+  .logo__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
-.navigation {
-  display: flex;
-  margin-left: auto;
-  margin-top: 7px;
-  margin-right: 75px;
-}
-
-.nav__item {
-  margin-right: 50px;
-  line-height: 25px;
-  color: #2b292d;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.nav__item_selected {
-  font-weight: 700;
-}
-
-.nav__item:last-child {
-  margin-right: 0px;
-}
-
-.nav__arrow {
-  display: inline-block;
-  margin-left: 11px;
-  width: 8px;
-  height: 5px;
-  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-}
-
-.logo {
-  display: flex;
-}
-
-.logo__image {
-  margin-right: 15px;
-  width: 60px;
-  height: 60px;
-}
-
-.logo__name {
-  line-height: 25px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.logo__descrip {
-  line-height: 25px;
-  font-size: 18px;
-  color: #2b292d;
-}
-
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -430,68 +500,105 @@
   border-radius: 2px;
 }
 
-.headline {
-  display: flex;
-  position: relative;
-  margin: auto;
-  padding-bottom: 77px;
-  margin-top: 84px;
-  width: 1140px;
+@media (max-width: 1399px) {
+  .headline {
+    width: 100%;
+  }
+  .headline__content {
+    margin: 35px 15px 33px 15px;
+  }
+  .headline__banner {
+    position: relative;
+    top: 0px;
+    right: -105px;
+    margin-left: auto;
+    width: 796px;
+    height: 448px;
+  }
+  .headline__title {
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.31px;
+  }
+  .headline__description {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    line-height: 34px;
+    font-size: 24px;
+  }
+  .headline__actions {
+    margin-top: 30px;
+  }
+  .headline__more-learn-btn {
+    width: 158px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3040c4;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    border: none;
+  }
 }
-
-.headline__content {
-  position: absolute;
-  z-index: 1;
+@media (min-width: 1400px) {
+  .headline {
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding-bottom: 77px;
+    margin-top: 84px;
+    width: 1140px;
+  }
+  .headline__content {
+    position: absolute;
+    z-index: 1;
+  }
+  .headline__banner {
+    position: relative;
+    top: 0px;
+    right: -105px;
+    margin-left: auto;
+    width: 796px;
+    height: 448px;
+  }
+  .headline__title {
+    margin: 0;
+    width: 754px;
+    height: 165px;
+    line-height: 78px;
+    font-size: 80px;
+    letter-spacing: -0.5px;
+    color: rgb(43, 41, 45);
+    z-index: 1;
+  }
+  .headline__description {
+    margin-top: 34px;
+    margin-bottom: 0px;
+    width: 456px;
+    height: 102px;
+    line-height: 34px;
+    font-size: 24px;
+    z-index: 1;
+  }
+  .headline__actions {
+    display: flex;
+    margin-top: 58px;
+  }
+  .headline__more-learn-btn {
+    margin-left: 10px;
+    width: 158px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3040c4;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    border: none;
+  }
 }
-
-.headline__banner {
-  position: relative;
-  top: 0px;
-  right: -105px;
-  margin-left: auto;
-  width: 796px;
-  height: 448px;
-}
-
-.headline__title {
-  margin: 0;
-  width: 754px;
-  height: 165px;
-  line-height: 78px;
-  font-size: 80px;
-  letter-spacing: -0.5px;
-  color: rgb(43, 41, 45);
-  z-index: 1;
-}
-
-.headline__description {
-  margin-top: 34px;
-  margin-bottom: 0px;
-  width: 456px;
-  height: 102px;
-  line-height: 34px;
-  font-size: 24px;
-  z-index: 1;
-}
-
-.headline__actions {
-  display: flex;
-  margin-top: 58px;
-}
-
-.headline__more-learn-btn {
-  margin-left: 10px;
-  width: 158px;
-  height: 48px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #3040c4;
-  background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  border: none;
-}
-
 .action-button {
   width: 160px;
   height: 48px;
@@ -678,12 +785,19 @@ html {
   color: rgb(43, 41, 45);
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
+@media (max-width: 1399px) {
+  .page {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
