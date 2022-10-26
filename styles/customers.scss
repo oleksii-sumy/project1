@@ -1,0 +1,12 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+@import 'common.scss';
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 77px 130px 76px 130px;
+  width: 100%;
+  background-color: $bgc-section-about;
+}
