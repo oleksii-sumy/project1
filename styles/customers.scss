@@ -2,15 +2,53 @@
 @import 'variables.scss';
 @import 'common.scss';
 
-.customers {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 106px;
-  width: 1140px;
-}
-.customers__logo {
+@include for-small {
+  .customers {
+    display: flex;
+    flex-direction: column;
+  }
+  .customers__row {
+    display: flex;
+  }
+  .customers__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 94px;
+    border-bottom: 1px solid $border-color-customers;
+    border-right: 1px solid $border-color-customers;
+  }
+  .customers__item:last-child {
+    border-right: none;
+  }
+  .customers__logo {
+    max-width: 80%;
     filter: brightness(0);
+  }
+}
+
+@include for-large {
+  .customers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 106px;
+    width: 1140px;
+  }
+    .customers__row {
+      display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+    .customers__item {
+      border: none;
+    }
+  .customers__logo {
+    filter: brightness(0);
+  }
 }

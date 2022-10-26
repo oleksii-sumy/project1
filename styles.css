@@ -616,32 +616,52 @@
   border-radius: 2px;
 }
 
-.about {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  padding: 77px 130px 76px 130px;
-  width: 100%;
-  background-color: #f4f5f7;
+@media (max-width: 1399px) {
+  .about {
+    padding: 46px 15px;
+    width: 100%;
+    background-color: #f4f5f7;
+  }
+  .article:last-child {
+    margin-top: 20px;
+  }
+  .article__title {
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .article__text {
+    margin: 0;
+    margin-top: 6px;
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
-
-.article {
-  width: 555px;
+@media (min-width: 1400px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 77px 130px 76px 130px;
+  }
+  .article {
+    width: 555px;
+  }
+  .article:last-child {
+    margin-top: 0px;
+  }
+  .article__title {
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .article__text {
+    margin: 0;
+    margin-top: 6px;
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
-
-.article__title {
-  line-height: 32px;
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.article__text {
-  margin: 0;
-  margin-top: 6px;
-  font-size: 22px;
-  line-height: 32px;
-}
-
 .action-button {
   width: 160px;
   height: 48px;
@@ -653,20 +673,54 @@
   border-radius: 2px;
 }
 
-.customers {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 106px;
-  width: 1140px;
+@media (max-width: 1399px) {
+  .customers {
+    display: flex;
+    flex-direction: column;
+  }
+  .customers__row {
+    display: flex;
+  }
+  .customers__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 94px;
+    border-bottom: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+  }
+  .customers__item:last-child {
+    border-right: none;
+  }
+  .customers__logo {
+    max-width: 80%;
+    filter: brightness(0);
+  }
 }
-
-.customers__logo {
-  filter: brightness(0);
+@media (min-width: 1400px) {
+  .customers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 106px;
+    width: 1140px;
+  }
+  .customers__row {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+  .customers__item {
+    border: none;
+  }
+  .customers__logo {
+    filter: brightness(0);
+  }
 }
-
 .action-button {
   width: 160px;
   height: 48px;
