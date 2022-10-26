@@ -2,11 +2,15 @@
 @import 'variables.scss';
 @import 'common.scss';
 
-.about {
+.customers {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
-  padding: 77px 130px 76px 130px;
-  width: 100%;
-  background-color: $bgc-section-about;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 1140px;
+}
+.customers__logo {
+    filter: brightness(0);
 }
