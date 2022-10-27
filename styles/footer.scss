@@ -1,44 +1,14 @@
 @import 'breakpoints.scss';
 @import 'variables.scss';
 
-@include for-small {
-  .footer .logo {
-    display: none;
-  }
-  .logo-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-vertical__image {
-    width: 60px;
-    height: 60px;
-  }
-
-  .logo-vertical__name {
-    margin-top: 20px;
-    line-height: 25px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-  }
-
-  .logo-vertical__descrip {
-    font-size: 18px;
-    line-height: 25px;
-    color: $text-color-footer-terms;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-  }
-  .about-company {
-    margin-top: 44px;
-  }
-  .footer__descrip {
+.footer {
+    @include for-small {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+    }
+&__descrip {}
+  @include for-small {
     display: none;
     width: 360px;
     margin-top: 26px;
@@ -46,185 +16,198 @@
     font-size: 19px;
     color: $text-color-footer-terms;
   }
-  .downloads {
-    margin: 25px 15px 0px 15px;
-    display: flex;
-    justify-content: center;
-  }
-  .downloads__item {
-    margin-right: 10px;
-  }
-  .additional-navigation {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-top: 15px;
-  }
-  .additional-navigation__column {
-    margin-top: 30px;
-  }
-  .nav-links {
-    width: 265px;
-  }
-  .nav-links__title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: $text-color-header;
-  }
-  .nav-links__title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: $text-color-header;
-  }
-  .nav-links__list {
-    padding: 0;
-    margin: 0;
-    margin-top: 18px;
-    line-height: 30px;
-    font-size: 18px;
-    color: rgba(43, 41, 45, 0.6);
-    list-style-type: none;
-  }
-  .footer-navigation {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .footer__line {
-    margin: 0;
-    margin-top: 40px;
-    width: 100%;
-    border-top: 1px solid $text-color-maine;
-    opacity: 0.1;
-  }
-  .footer-links {
-    display: flex;
-    margin-left: 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .terms {
-    margin-top: 30px;
-    line-height: 22px;
-    font-size: 14px;
-  }
-  .terms__item {
-    margin-left: 22px;
-    text-decoration: none;
-    color: $text-color-footer-terms;
-    opacity: 0.6;
-  }
-  .social-links {
-    margin-top: 30px;
-    margin-bottom: 23px;
-  }
-  .social-links__item {
-    margin-left: 20px;
-  }
-  .social-links__item:first-child {
-    margin-left: 0px;
-  }
-}
-////////////////////////////////////////
-@include for-large {
-  .logo-vertical {
-    display: none;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-  }
-  .about-company {
-    margin-top: 44px;
-  }
-  .footer__descrip {
+  @include for-large {
     display: block;
   }
-  .downloads {
+  &__line {
+    @include for-small {
+      margin: 0;
+      margin-top: 40px;
+      width: 100%;
+      border-top: 1px solid $text-color-maine;
+      opacity: 0.1;
+    }
+    @include for-large {
+      margin: 0;
+    }
+  }
+  @include for-small {
+    .logo {
+      display: none;
+    }
+  }
+}
+
+.about-company {
+  @include for-small {
+    margin-top: 44px;
+  }
+}
+
+.footer-navigation {
+  @include for-small {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    margin-top: 25px;
-    justify-content: left;
   }
-  .downloads__item {
-    margin-right: 10px;
-  }
-  .additional-navigation {
-    flex-direction: row;
-    margin-left: auto;
-    margin-top: 60px;
-  }
-  .additional-navigation__column {
-    margin-top: 0px;
-    margin-left: 29px;
-  }
-  .nav-links {
-    width: 265px;
-  }
-  .nav-links__title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: $text-color-header;
-  }
-  .nav-links__title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: $text-color-header;
-  }
-  .nav-links__list {
-    padding: 0;
-    margin: 0;
-    margin-top: 18px;
-    line-height: 30px;
-    font-size: 18px;
-    color: rgba(43, 41, 45, 0.6);
-    list-style-type: none;
-  }
-  .footer-navigation {
+  @include for-large {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     width: 1140px;
     height: 338px;
   }
+}
 
-  .footer__line {
-    margin: 0;
+.downloads {
+  @include for-small {
+    margin: 25px 15px 0px 15px;
+    display: flex;
+    justify-content: center;
   }
-  .footer-links {
+  @include for-large {
+    margin: 0;
+    margin-top: 25px;
+    justify-content: left;
+  }
+  @include for-small {
+    &__item {
+      margin-right: 10px;
+    }
+  }
+}
+
+.additional-navigation {
+  @include for-small {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  @include for-large {
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+  &__column {
+    @include for-small {
+      margin-top: 30px;
+    }
+    @include for-large {
+      margin-top: 0px;
+      margin-left: 29px;
+    }
+  }
+}
+
+.nav-links {
+  @include for-small {
+    width: 265px;
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      color: $text-color-header;
+    }
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      color: $text-color-header;
+    }
+    &__list {
+      padding: 0;
+      margin: 0;
+      margin-top: 18px;
+      line-height: 30px;
+      font-size: 18px;
+      color: rgba(43, 41, 45, 0.6);
+      list-style-type: none;
+    }
+  }
+}
+
+.footer-links {
+  @include for-small {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include for-large {
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
     width: 1140px;
     height: 50px;
   }
+}
 
-  .terms {
+.terms {
+  @include for-small {
+    margin-top: 30px;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  @include for-large {
     margin-top: 0px;
     line-height: 50px;
   }
-  .terms__item {
-    margin-left: 22px;
-    text-decoration: none;
-    color: $text-color-footer-terms;
-    opacity: 0.6;
+  &__item {
+    @include for-small {
+      margin-left: 22px;
+      text-decoration: none;
+      color: $text-color-footer-terms;
+      opacity: 0.6;
+    }
   }
-  .social-links {
+}
+.social-links {
+  @include for-small {
+    margin-top: 30px;
+    margin-bottom: 23px;
+  }
+  @include for-large {
     margin: auto;
     margin-bottom: 0px;
   }
-  .social-links__item {
-    margin-left: 20px;
+  &__item {
+    @include for-small {
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include for-large {
+    display: none;
+  }
+  @include for-small {
+    &__image {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__name {
+      margin-top: 20px;
+      line-height: 25px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    &__descrip {
+      font-size: 18px;
+      line-height: 25px;
+      color: $text-color-footer-terms;
+    }
   }
 }
