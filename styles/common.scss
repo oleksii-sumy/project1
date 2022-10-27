@@ -11,15 +11,14 @@
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: $border-r;
 }
-
+.hide_mobile  {
 @include for-small {
-  .hide_mobile {
-  display: none;
+    display: none;
 }
 }
 
-@include for-large {
 .hide_desctop {
+@include for-large {
   display: none;
 }
 }
