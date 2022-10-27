@@ -1,0 +1,68 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+@import 'common.scss';
+
+@include for-small {
+  .tips {
+    margin-top: 8px;
+  }
+  .tip {
+    margin: 40px 15px 0px 15px;
+    border-bottom: 1px solid $border-color-customers;
+
+  }
+.tip__subtitle {
+  line-height: 34px;
+font-weight: 700;
+font-size: 22px;
+color:$text-color-feature;
+}
+.tip__title {
+  margin-top: 17px;
+  line-height: 40px;
+  font-weight: 700;
+font-size: 40px;
+letter-spacing: -0.357143px;
+
+}
+.tip__description {
+  margin: 0;
+  margin-top: 13px;
+  line-height: 34px;
+
+  font-weight: 400;
+font-size: 24px;
+}
+.tip__image {
+    margin-top: 29px;
+
+}
+.tip__image-caption {
+  margin-top: 20px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+color: $text-color-tip-description;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@include for-large {
+.tips {
+    display: none;
+  }
+
+}
