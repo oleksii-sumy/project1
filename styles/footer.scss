@@ -2,12 +2,13 @@
 @import 'variables.scss';
 
 .footer {
-    @include for-small {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-    }
-&__descrip {}
+  @include for-small {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+  &__descrip {
+  }
   @include for-small {
     display: none;
     width: 360px;

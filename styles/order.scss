@@ -2,136 +2,118 @@
 @import 'variables.scss';
 @import 'common.scss';
 
-        @include for-large {
-
-        }
+@include for-large {
+}
 
 .order {
-    @include for-small {
-        padding: 50px 15px;
-        background-color: $bgc-section-about;
-    }
-        @include for-large {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-padding: 73px 0px 72px 0px;
-        }
-        &__details {
-            max-width: 555px;
-        }
-&__illustration{
-    @include for-small {
-        display: flex;
-    margin: auto;
-        max-width: 200px;
-    }
-            @include for-large {
-                margin: 0;
-    margin-right: 122px;
-        max-width: 269px;
-
-        }
-
-}
-
-&__title {
-    @include for-small {
-        display: flex;
+  @include for-small {
+    padding: 50px 15px;
+    background-color: $bgc-section-about;
+  }
+  @include for-large {
+    display: flex;
     justify-content: center;
-                margin-top: 40px;
-                margin-left: 15px;
-                margin-right: 15px;
-        line-height: 40px;
-        font-weight: 700;
-        font-size: 40px;
-        letter-spacing: 0.25px;
-    }
-
-}
-
-&__text {
+    align-items: flex-start;
+    padding: 73px 0px 72px 0px;
+  }
+  &__details {
+    max-width: 555px;
+  }
+  &__illustration {
     @include for-small {
-        display: flex;
-    justify-content: center;
-        margin: 0;
-                        margin-left: 15px;
-                margin-right: 15px;
-        margin-top: 18px;
-        line-height: 32px;
-font-size: 22px;
+      display: flex;
+      margin: auto;
+      max-width: 200px;
     }
+    @include for-large {
+      margin: 0;
+      margin-right: 122px;
+      max-width: 269px;
+    }
+  }
 
+  &__title {
+    @include for-small {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-left: 15px;
+      margin-right: 15px;
+      line-height: 40px;
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.25px;
+    }
+  }
 
-}
-&__form {
-        @include for-small {
-            margin-top: 26px;
-display: flex;
-flex-direction: column;
-        }
-        @include for-large {
-          flex-direction: row;
-  
-        }
-}
+  &__text {
+    @include for-small {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 18px;
+      line-height: 32px;
+      font-size: 22px;
+    }
+  }
+  &__form {
+    @include for-small {
+      margin-top: 26px;
+      display: flex;
+      flex-direction: column;
+    }
+    @include for-large {
+      flex-direction: row;
+    }
+  }
 
-&__email {
-        @include for-small {
-width: 100%;
-height: 48px;
-background: $gallery-bgcolor-primaru;
-border: 1px solid $border-color;
-border-radius: $border-r;
-line-height: 13px;
-text-align: center;
-font-size: 18px;
-@include for-large {
-    margin-top: 0;
-    flex-grow: 1;
-}
-&::placeholder {
-    color: $text-color-maine;
-}
-}
+  &__email {
+    @include for-small {
+      width: 100%;
+      height: 48px;
+      background: $gallery-bgcolor-primaru;
+      border: 1px solid $border-color;
+      border-radius: $border-r;
+      line-height: 13px;
+      text-align: center;
+      font-size: 18px;
+      @include for-large {
+        margin-top: 0;
+        flex-grow: 1;
+      }
+      &::placeholder {
+        color: $text-color-maine;
+      }
+    }
+  }
 
-}
+  &__button {
+    @include for-small {
+      margin: 0;
+      margin-top: 12px;
+      margin-right: 15px;
+      width: 100%;
+    }
+    @include for-large {
+      margin: 0px;
+      margin-left: 15px;
+      min-width: 160px;
+    }
+  }
 
-&__button {
-        @include for-small {
-            margin: 0;
-margin-top: 12px;
-margin-right: 15px;
-width: 100%;
-        }
-@include for-large {
-    margin: 0px;
-    margin-left: 15px ;
-    min-width: 160px;
+  &__terms {
+    @include for-small {
+      line-height: 22px;
+      font-size: 14px;
+      color: $text-color-tip-description;
+    }
+  }
 
-}
-
-}
-
-
-&__terms {
-        @include for-small {
-line-height: 22px;
-font-size: 14px;
-color:$text-color-tip-description;
-        }
-
-    
-}
-
-&__terms-link {
-
-        @include for-small {
-color: $text-color-feature-advantage;
-        }
-
-
-}
-
-
+  &__terms-link {
+    @include for-small {
+      color: $text-color-feature-advantage;
+    }
+  }
 }
