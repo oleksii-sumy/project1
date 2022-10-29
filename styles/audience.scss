@@ -142,7 +142,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 15px;
-      padding: 22px 76px 83px 76px;
+      margin: 22px 76px 83px 76px;
       background-color: #fff;
       width: 290px;
       height: 300px;
@@ -162,13 +162,15 @@
       margin-bottom: 0px;
     }
 
-    &__item-img {
+    &__img {
       @include for-small {
-        margin-bottom: 22px;
+        display: block;
+        padding-bottom: 22px;
       }
     }
     &__item-name {
       @include for-small {
+        margin-top: 22px;
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
