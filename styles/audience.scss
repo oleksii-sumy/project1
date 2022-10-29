@@ -161,21 +161,21 @@
     &:last-child {
       margin-bottom: 0px;
     }
-
-    &__img {
-      @include for-small {
-        display: block;
-        padding-bottom: 22px;
-      }
+    &:hover {
+      background-color: $gallery-bgcolor-hover;
+      color: $text-color-gallery-secondary;
     }
-    &__item-name {
-      @include for-small {
-        margin-top: 22px;
+  }
+}
+ 
+    .audience-gallery__img {
+        padding-bottom: 22px;
+    }
+    .gallery__item-name {
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
         text-align: center;
-      }
     }
-  }
-}
+  
+
