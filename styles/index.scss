@@ -11,7 +11,6 @@
 @import 'tips.scss';
 @import 'order.scss';
 
-
 * {
   box-sizing: border-box;
 }
@@ -22,16 +21,16 @@ html {
 }
 
 @include for-small {
- .page {
-   width: 100%;
-}
+  .page {
+    width: 100%;
+  }
 }
 @include for-large {
   .page {
-  display: flex;
-  flex-direction: column;
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-}
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+  }
 }
