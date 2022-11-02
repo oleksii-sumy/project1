@@ -106,9 +106,4 @@
       margin-top: 0;
     }
   }
-  &__actions-btn {
-    @include for-large {
-      width: 100%;
-    }
-  }
 }
