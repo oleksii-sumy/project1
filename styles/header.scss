@@ -40,15 +40,18 @@
       display: inline-block;
     }
     &__menu-button {
-      margin-left: auto;
+          @include for-small {
+                  margin-left: auto;
       width: 58px;
       height: 100%;
       border: none;
       border-left: 1px solid $color-header__menu-button;
       background: transparent;
-    }
+          }
     @include for-large {
       display: none;
+    }
+
     }
   }
 
@@ -101,13 +104,9 @@
 
     &__image {
       margin-right: 13px;
-      width: 48px;
-      height: 48px;
     }
     @include for-large {
       margin-right: 15px;
-      width: 60px;
-      height: 60px;
     }
   }
 

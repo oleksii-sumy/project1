@@ -252,16 +252,18 @@
     display: inline-block;
   }
 }
-.header__menu-icon__menu-button {
-  margin-left: auto;
-  width: 58px;
-  height: 100%;
-  border: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.1490196078);
-  background: transparent;
+@media (min-width: 320px) {
+  .header__menu-icon__menu-button {
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.1490196078);
+    background: transparent;
+  }
 }
 @media (min-width: 1400px) {
-  .header__menu-icon {
+  .header__menu-icon__menu-button {
     display: none;
   }
 }
@@ -316,15 +318,11 @@
   }
   .logo__image {
     margin-right: 13px;
-    width: 48px;
-    height: 48px;
   }
 }
 @media (min-width: 320px) and (min-width: 1400px) {
   .logo {
     margin-right: 15px;
-    width: 60px;
-    height: 60px;
   }
 }
 @media (min-width: 320px) {
