@@ -1,4 +1,4 @@
-# project1: https://github.com/oleksii-sumy/project1
+https://oleksii-sumy.github.io/project1/
 
 Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 
