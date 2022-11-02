@@ -253,7 +253,7 @@
   }
 }
 @media (min-width: 320px) {
-  .header__menu-icon__menu-button {
+  .header__menu-button {
     margin-left: auto;
     width: 58px;
     height: 100%;
@@ -263,7 +263,7 @@
   }
 }
 @media (min-width: 1400px) {
-  .header__menu-icon__menu-button {
+  .header__menu-button {
     display: none;
   }
 }

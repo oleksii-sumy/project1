@@ -39,21 +39,21 @@
       background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
       display: inline-block;
     }
+     }
     &__menu-button {
-          @include for-small {
-                  margin-left: auto;
-      width: 58px;
-      height: 100%;
-      border: none;
-      border-left: 1px solid $color-header__menu-button;
-      background: transparent;
-          }
-    @include for-large {
-      display: none;
+      @include for-small {
+        margin-left: auto;
+        width: 58px;
+        height: 100%;
+        border: none;
+        border-left: 1px solid $color-header__menu-button;
+        background: transparent;
+      }
+      @include for-large {
+        display: none;
+      }
     }
-
-    }
-  }
+ 
 
   .logo__descrip {
     @include for-small {
