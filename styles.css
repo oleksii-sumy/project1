@@ -246,6 +246,7 @@
 }
 @media (min-width: 320px) {
   .header__menu-icon {
+    margin: auto;
     width: 18px;
     height: 13px;
     background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
@@ -254,6 +255,7 @@
 }
 @media (min-width: 320px) {
   .header__menu-button {
+    display: flex;
     margin-left: auto;
     width: 58px;
     height: 100%;
